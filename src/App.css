@@ -1,50 +1,79 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.App {
   text-align: center;
+  padding: 20px;
 }
-
-/* CSS de regalo */
 
 .container {
-  width: 660px;
   display: flex;
-  padding: 20px;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  border-radius: 5px;
-  border: 1px solid white;
 }
 
-/* Estilos para cada una de las box */
+input {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 300px;
+}
+
 .box {
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 200px;
-  border-width: 1px;
-  border-style: solid;
+  border: 2px solid #333;
+  transition: background-color 0.3s;
+  color: black;
+}
+
+.box.active {
   color: white;
 }
 
-/* Estilos para el input */
-input {
-  width: 50%;
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  background-color: #f5f5f5;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s, box-shadow 0.3s;
-  margin-bottom: 20px;
+.box.red {
+  background-color: lightcoral;
 }
 
+.box.green {
+  background-color: lightgreen;
+}
 
+.box.pink {
+  background-color: lightpink;
+}
 
+.box.yellow {
+  background-color: lightyellow;
+}
 
+.box.purple {
+  background-color: plum;
+}
 
+.box.white {
+  background-color: white;
+  border: 2px solid #ccc;
+}
+
+.box.blue {
+  background-color: lightskyblue;
+}
+
+.box.aqua {
+  background-color: lightcyan;
+}
+
+.box.olive {
+  background-color: olivedrab;
+}
+
+.result {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
